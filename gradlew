@@ -3,4 +3,4 @@
 #
 # Copyright 2015 the original author or authors.
 #
-# Licensed under the Apache Licens
+# Licensed under the Apache License, Vers
