@@ -18,4 +18,6 @@
 
 ##############################################################################
 ##
-##  Gradle start up script for UN
+##  Gradle start up script for UN*X
+##
+#
