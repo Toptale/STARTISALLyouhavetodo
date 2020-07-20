@@ -23,4 +23,4 @@
 ##############################################################################
 
 # Attempt to set APP_HOME
-# Resolve links
+# Resolve links: $0 m
