@@ -29,4 +29,5 @@ PRG="$0"
 while [ -h "$PRG" ] ; do
     ls=`ls -ld "$PRG"`
     link=`expr "$ls" : '.*-> \(.*\)$'`
-    if expr "$link" : '/.*' > /dev/null;
+    if expr "$link" : '/.*' > /dev/null; then
+   
