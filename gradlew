@@ -36,3 +36,4 @@ while [ -h "$PRG" ] ; do
     fi
 done
 SAVED="`pwd`"
+cd "`dirname 
