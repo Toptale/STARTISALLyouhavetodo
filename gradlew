@@ -41,4 +41,4 @@ APP_HOME="`pwd -P`"
 cd "$SAVED" >/dev/null
 
 APP_NAME="Gradle"
-APP_BASE
+APP_BASE_NAME=`basen
