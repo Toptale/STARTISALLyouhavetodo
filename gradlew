@@ -50,3 +50,4 @@ DEFAULT_JVM_OPTS='"-Xmx64m" "-Xms64m"'
 MAX_FD="maximum"
 
 warn () {
+    echo
