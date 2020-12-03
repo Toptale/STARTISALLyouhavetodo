@@ -53,4 +53,5 @@ warn () {
     echo "$*"
 }
 
-die
+die () {
+  
