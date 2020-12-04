@@ -55,4 +55,5 @@ warn () {
 
 die () {
     echo
-    echo "$*
+    echo "$*"
+    echo
