@@ -54,4 +54,5 @@ warn () {
 }
 
 die () {
-  
+    echo
+    
