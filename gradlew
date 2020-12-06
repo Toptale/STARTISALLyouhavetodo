@@ -58,3 +58,6 @@ die () {
     echo "$*"
     echo
     exit 1
+}
+
+# OS
