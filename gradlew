@@ -57,3 +57,4 @@ die () {
     echo
     echo "$*"
     echo
+    ex
