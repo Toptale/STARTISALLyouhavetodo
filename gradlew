@@ -60,4 +60,4 @@ die () {
     exit 1
 }
 
-# OS specific support (must 
+# OS specific support (must be 'tru
