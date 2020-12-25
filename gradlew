@@ -62,4 +62,5 @@ die () {
 
 # OS specific support (must be 'true' or 'false').
 cygwin=false
-msys=f
+msys=false
+dar
