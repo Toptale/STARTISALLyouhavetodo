@@ -67,4 +67,4 @@ darwin=false
 nonstop=false
 case "`uname`" in
   CYGWIN* )
-    cy
+    cygwin=tru
