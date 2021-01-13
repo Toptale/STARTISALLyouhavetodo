@@ -70,4 +70,5 @@ case "`uname`" in
     cygwin=true
     ;;
   Darwin* )
-    darwin=tru
+    darwin=true
+    
