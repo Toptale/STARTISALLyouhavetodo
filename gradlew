@@ -71,4 +71,5 @@ case "`uname`" in
     ;;
   Darwin* )
     darwin=true
-    
+    ;;
+  MSY
