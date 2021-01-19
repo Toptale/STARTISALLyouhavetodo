@@ -73,4 +73,4 @@ case "`uname`" in
     darwin=true
     ;;
   MSYS* | MINGW* )
-    ms
+    msys=t
