@@ -75,4 +75,5 @@ case "`uname`" in
   MSYS* | MINGW* )
     msys=true
     ;;
-  NONSTOP* 
+  NONSTOP* )
+    n
