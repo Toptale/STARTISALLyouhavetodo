@@ -77,4 +77,6 @@ case "`uname`" in
     ;;
   NONSTOP* )
     nonstop=true
-    
+    ;;
+esac
+
