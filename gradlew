@@ -80,4 +80,4 @@ case "`uname`" in
     ;;
 esac
 
-CLASS
+CLASSPATH=$
