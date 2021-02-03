@@ -80,4 +80,4 @@ case "`uname`" in
     ;;
 esac
 
-CLASSPATH=$APP_HOM
+CLASSPATH=$APP_HOME/gra
