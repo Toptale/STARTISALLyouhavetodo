@@ -83,4 +83,4 @@ esac
 CLASSPATH=$APP_HOME/gradle/wrapper/gradle-wrapper.jar
 
 
-# Determine the Java comman
+# Determine the Java command to u
