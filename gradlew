@@ -83,4 +83,5 @@ esac
 CLASSPATH=$APP_HOME/gradle/wrapper/gradle-wrapper.jar
 
 
-# Determine the Java command to use to start the J
+# Determine the Java command to use to start the JVM.
+if [
