@@ -92,4 +92,4 @@ if [ -n "$JAVA_HOME" ] ; then
         JAVACMD="$JAVA_HOME/bin/java"
     fi
     if [ ! -x "$JAVACMD" ] ; then
-        die "ERROR: JAVA_HOME is set to 
+        die "ERROR: JAVA_HOME is set to an inva
