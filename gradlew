@@ -99,4 +99,4 @@ location of your Java installation."
     fi
 else
     JAVACMD="java"
-    which java >/d
+    which java >/dev/nu
