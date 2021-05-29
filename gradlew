@@ -99,4 +99,4 @@ location of your Java installation."
     fi
 else
     JAVACMD="java"
-    which java >/dev/null 2>&1 || die "ERROR: JAVA_HOME 
+    which java >/dev/null 2>&1 || die "ERROR: JAVA_HOME is no
