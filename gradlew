@@ -105,4 +105,4 @@ Please set the JAVA_HOME variable in your environment to match the
 location of your Java installation."
 fi
 
-# Increase the 
+# Increase the maximum
