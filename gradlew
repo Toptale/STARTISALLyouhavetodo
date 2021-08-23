@@ -118,4 +118,7 @@ if [ "$cygwin" = "false" -a "$darwin" = "false" -a "$nonstop" = "false" ] ; then
         fi
     else
         warn "Could not query maximum file descriptor limit: $MAX_FD_LIMIT"
-    f
+    fi
+fi
+
+#
