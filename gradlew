@@ -123,4 +123,4 @@ fi
 
 # For Darwin, add options to specify how the application appears in the dock
 if $darwin; then
-    GRADLE_OPT
+    GRADLE_OPTS="$GRAD
