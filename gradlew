@@ -127,4 +127,4 @@ if $darwin; then
 fi
 
 # For Cygwin or MSYS, switch paths to Windows format before running java
-if [ "$cygwin"
+if [ "$cygwin" = "tr
