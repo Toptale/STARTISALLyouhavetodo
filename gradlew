@@ -127,4 +127,5 @@ if $darwin; then
 fi
 
 # For Cygwin or MSYS, switch paths to Windows format before running java
-if [ "$cygwin" = "true" -o "$msys" = "true" ] ; th
+if [ "$cygwin" = "true" -o "$msys" = "true" ] ; then
+    APP
