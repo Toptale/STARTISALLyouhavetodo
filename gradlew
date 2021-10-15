@@ -129,4 +129,4 @@ fi
 # For Cygwin or MSYS, switch paths to Windows format before running java
 if [ "$cygwin" = "true" -o "$msys" = "true" ] ; then
     APP_HOME=`cygpath --path --mixed "$APP_HOME"`
-    CLASSPATH=`cygpath --path --mixed "$CLASS
+    CLASSPATH=`cygpath --path --mixed "$CLASSPATH"`
