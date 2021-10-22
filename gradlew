@@ -131,4 +131,6 @@ if [ "$cygwin" = "true" -o "$msys" = "true" ] ; then
     APP_HOME=`cygpath --path --mixed "$APP_HOME"`
     CLASSPATH=`cygpath --path --mixed "$CLASSPATH"`
 
-    JAVACMD=`cygpath --unix "$JAVACMD"
+    JAVACMD=`cygpath --unix "$JAVACMD"`
+
+  
