@@ -139,4 +139,5 @@ if [ "$cygwin" = "true" -o "$msys" = "true" ] ; then
     for dir in $ROOTDIRSRAW ; do
         ROOTDIRS="$ROOTDIRS$SEP$dir"
         SEP="|"
-    don
+    done
+    
