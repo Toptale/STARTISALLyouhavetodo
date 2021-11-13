@@ -140,4 +140,4 @@ if [ "$cygwin" = "true" -o "$msys" = "true" ] ; then
         ROOTDIRS="$ROOTDIRS$SEP$dir"
         SEP="|"
     done
-    OURCYGPATTE
+    OURCYGPATTERN="(
