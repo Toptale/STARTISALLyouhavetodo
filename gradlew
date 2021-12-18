@@ -147,4 +147,5 @@ if [ "$cygwin" = "true" -o "$msys" = "true" ] ; then
     fi
     # Now convert the arguments - kludge to limit ourselves to /bin/sh
     i=0
-    for arg in "$@"
+    for arg in "$@" ; do
+   
