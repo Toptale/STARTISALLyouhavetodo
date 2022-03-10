@@ -152,4 +152,4 @@ if [ "$cygwin" = "true" -o "$msys" = "true" ] ; then
         CHECK2=`echo "$arg"|egrep -c "^-"`                                 ### Determine if an option
 
         if [ $CHECK -ne 0 ] && [ $CHECK2 -eq 0 ] ; then                    ### Added a condition
-            eval `echo args$i`=`cygpath --path --ignore --mixed "
+            eval `echo args$i`=`cygpath --path --ignore --mixed "$arg"
