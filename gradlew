@@ -156,4 +156,4 @@ if [ "$cygwin" = "true" -o "$msys" = "true" ] ; then
         else
             eval `echo args$i`="\"$arg\""
         fi
-        i=`expr $i 
+        i=`expr $i + 1`
