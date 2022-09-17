@@ -168,4 +168,5 @@ if [ "$cygwin" = "true" -o "$msys" = "true" ] ; then
         6) set -- "$args0" "$args1" "$args2" "$args3" "$args4" "$args5" ;;
         7) set -- "$args0" "$args1" "$args2" "$args3" "$args4" "$args5" "$args6" ;;
         8) set -- "$args0" "$args1" "$args2" "$args3" "$args4" "$args5" "$args6" "$args7" ;;
-        9) set -- "$args0" "$args1" "$args2" "$args3" "$args4" "$args5" "$args6" "$args7" "$ar
+        9) set -- "$args0" "$args1" "$args2" "$args3" "$args4" "$args5" "$args6" "$args7" "$args8" ;;
+    
