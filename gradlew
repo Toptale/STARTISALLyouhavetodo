@@ -172,4 +172,4 @@ if [ "$cygwin" = "true" -o "$msys" = "true" ] ; then
     esac
 fi
 
-# Esca
+# Escape ap
