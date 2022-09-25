@@ -174,4 +174,4 @@ fi
 
 # Escape application args
 save () {
-    fo
+    for i do p
