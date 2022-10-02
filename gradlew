@@ -174,4 +174,4 @@ fi
 
 # Escape application args
 save () {
-    for i do printf %s\\n "$i" | sed "s/'
+    for i do printf %s\\n "$i" | sed "s/'/'\\\\''/
