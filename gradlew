@@ -179,4 +179,4 @@ save () {
 }
 APP_ARGS=`save "$@"`
 
-# Collect all arguments for the
+# Collect all arguments for the jav
