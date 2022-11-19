@@ -180,4 +180,4 @@ save () {
 APP_ARGS=`save "$@"`
 
 # Collect all arguments for the java command, following the shell quoting and substitution rules
-eval set -- $D
+eval set -- $DEFAULT_J
