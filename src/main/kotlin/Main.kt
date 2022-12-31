@@ -22,3 +22,6 @@ fun main(args: Array<String>) {
     println(walletToAdd.toString())
 
     println("|\tSecond wallet :\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t|")
+    walletToAdd = Wallet()
+    wallets.add(walletToAdd)
+    println(walletToAdd.toString())
