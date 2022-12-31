@@ -16,3 +16,9 @@ fun main(args: Array<String>) {
 
     println("|\tCreating wallets :\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t|")
     val wallets: ArrayList<Wallet> = arrayListOf()
+    println("|\tFirst wallet :\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t|")
+    var walletToAdd = Wallet()
+    wallets.add(walletToAdd)
+    println(walletToAdd.toString())
+
+    println("|\tSecond wallet :\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t|")
