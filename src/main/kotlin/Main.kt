@@ -40,3 +40,8 @@ fun main(args: Array<String>) {
     walletToAdd = Wallet()
     wallets.add(walletToAdd)
     println(walletToAdd.toString())
+
+    println("|\tAdding transactions :\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t|")
+
+    println("|\t#### First transaction ####\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t|")
+    var transactionToAdd = Transaction(
