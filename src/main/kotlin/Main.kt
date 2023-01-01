@@ -45,3 +45,15 @@ fun main(args: Array<String>) {
 
     println("|\t#### First transaction ####\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t|")
     var transactionToAdd = Transaction(
+        wallets[0].publicKey,
+        wallets[1].publicKey,
+        7.0
+    )
+
+    transactionToAdd.sign(wallets[0].keyPair)
+    ledger.addTransaction(transactionToAdd)
+    println("|\t########## Added ##########\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t|")
+
+    println("|\t#### Second transaction ####\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t|")
+    transactionToAdd = Transaction(
+        wallets[1].publicKey,
