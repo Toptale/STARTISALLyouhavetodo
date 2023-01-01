@@ -57,3 +57,11 @@ fun main(args: Array<String>) {
     println("|\t#### Second transaction ####\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t|")
     transactionToAdd = Transaction(
         wallets[1].publicKey,
+        wallets[3].publicKey,
+        65.0
+    )
+
+    transactionToAdd.sign(wallets[1].keyPair)
+
+    ledger.addTransaction(transactionToAdd)
+    println("|\t########## Added ##########\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t|")
