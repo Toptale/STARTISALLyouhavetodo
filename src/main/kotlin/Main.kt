@@ -65,3 +65,10 @@ fun main(args: Array<String>) {
 
     ledger.addTransaction(transactionToAdd)
     println("|\t########## Added ##########\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t|")
+
+    ledger.addBlockWithReward(wallets[4].publicKey)
+
+    ledger.getBalanceForAddress(wallets[0].publicKey)
+    ledger.getBalanceForAddress(wallets[1].publicKey)
+    ledger.getBalanceForAddress(wallets[2].publicKey)
+    ledger.getBalanceForAddress(wallets[3].publicKey)
