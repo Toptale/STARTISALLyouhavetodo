@@ -72,3 +72,11 @@ fun main(args: Array<String>) {
     ledger.getBalanceForAddress(wallets[1].publicKey)
     ledger.getBalanceForAddress(wallets[2].publicKey)
     ledger.getBalanceForAddress(wallets[3].publicKey)
+    ledger.getBalanceForAddress(wallets[4].publicKey)
+
+    println(
+        String.format(
+            "|\tIs the ledger valid ? %s\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t|",
+            ledger.isValid()
+        )
+    )
