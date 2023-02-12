@@ -28,3 +28,17 @@ class Block : Hashable,
 
     override fun calculateHash(): String =
         "$transactions$timestamp$nounce$previousHash".toHashString()
+
+    override fun mine() {
+        if (HASH_DIFFICULTY.isEmpty() || HASH_DIFFICULTY.length > HASH_SIZE) throw WrongDifficultySizeException()
+
+        println("|\tBlock mining started...\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t|")
+        while (!(calculateHash().also { hash = it }).contains(HASH_DIFFICULTY)) {
+            nounce = (Math.random() * 10 * HASH_DIFFICULTY.length).toInt()
+        }
+
+        println("|\tBlock have been mined, the resulting hash is : $hash\t\t\t\t\t\t\t\t\t\t|")
+    }
+
+    override fun isValid(): Boolean {
+        transactions.forEach { transaction ->
