@@ -21,3 +21,10 @@ class Block : Hashable,
     Verifiable {
 
     val transactions: TransactionArray = TransactionArray()
+    private val timestamp: Date = Date()
+    var nounce: Int = 0
+    var previousHash: String = "0"
+    lateinit var hash: String
+
+    override fun calculateHash(): String =
+        "$transactions$timestamp$nounce$previousHash".toHashString()
