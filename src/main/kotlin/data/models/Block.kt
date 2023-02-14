@@ -42,3 +42,12 @@ class Block : Hashable,
 
     override fun isValid(): Boolean {
         transactions.forEach { transaction ->
+            if (!transaction.isValid()) return false
+        }
+        return true
+    }
+
+
+    override fun toString(): String =
+        GsonBuilder()
+            .setPrettyPrinting()
