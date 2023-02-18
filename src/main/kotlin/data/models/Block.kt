@@ -58,3 +58,7 @@ class Block : Hashable,
                         TransactionDto(
                             transaction.fromAddress?.toHexString() ?: "",
                             transaction.toAddress.toHexString(),
+                            transaction.amount
+                        )
+                    } as ArrayList<TransactionDto>,
+                    timestamp,
