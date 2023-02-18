@@ -51,3 +51,10 @@ class Block : Hashable,
     override fun toString(): String =
         GsonBuilder()
             .setPrettyPrinting()
+            .create()
+            .toJson(
+                BlockDto(
+                    transactions.map { transaction ->
+                        TransactionDto(
+                            transaction.fromAddress?.toHexString() ?: "",
+                            transaction.toAddress.toHexString(),
