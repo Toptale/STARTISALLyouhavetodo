@@ -62,3 +62,10 @@ class Block : Hashable,
                         )
                     } as ArrayList<TransactionDto>,
                     timestamp,
+                    nounce,
+                    previousHash,
+                    hash
+                )
+            )
+
+    companion object {
