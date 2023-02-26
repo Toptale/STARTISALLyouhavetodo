@@ -69,3 +69,8 @@ class Block : Hashable,
             )
 
     companion object {
+        val GENESIS = Block().apply {
+            transactions.clear()
+            transactions.addAll(TransactionArray.getGenesis())
+            hash = calculateHash()
+        }
