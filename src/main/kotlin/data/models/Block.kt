@@ -74,3 +74,5 @@ class Block : Hashable,
             transactions.addAll(TransactionArray.getGenesis())
             hash = calculateHash()
         }
+    }
+}
