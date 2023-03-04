@@ -26,3 +26,13 @@ class Ledger : Verifiable {
     }
 
     fun addBlockWithReward(address: PublicKey) {
+        addTransaction(
+            Transaction(
+                null,
+                address,
+                MINING_REWARD
+            )
+        )
+
+        addBlock()
+    }
