@@ -36,3 +36,10 @@ class Ledger : Verifiable {
 
         addBlock()
     }
+
+    fun addTransaction(transaction: Transaction) {
+        if(!transaction.isValid())
+            throw InvalidTransactionException()
+
+        pendingTransactions.add(transaction)
+    }
