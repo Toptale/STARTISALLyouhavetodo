@@ -49,3 +49,11 @@ class Ledger : Verifiable {
         println("|\tGetting balance for ${address.toHexString()} :\t|")
         chain.forEach { block ->
             block.transactions.forEach { transaction ->
+                if (transaction.fromAddress == address) balance -= transaction.amount
+
+                if (transaction.toAddress == address) balance += transaction.amount
+            }
+        }
+        println("|\tBalance = $balance\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t|")
+        return balance
+    }
