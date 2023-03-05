@@ -43,3 +43,9 @@ class Ledger : Verifiable {
 
         pendingTransactions.add(transaction)
     }
+
+    fun getBalanceForAddress(address: PublicKey): Double {
+        var balance = 0.0
+        println("|\tGetting balance for ${address.toHexString()} :\t|")
+        chain.forEach { block ->
+            block.transactions.forEach { transaction ->
