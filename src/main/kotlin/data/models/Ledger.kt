@@ -57,3 +57,12 @@ class Ledger : Verifiable {
         println("|\tBalance = $balance\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t|")
         return balance
     }
+
+    override fun isValid(): Boolean {
+        for (i in 1 until chain.size) {
+            if (!chain[i].isValid()) return false
+
+            if (chain[i].hash != chain[i].calculateHash()) return false
+
+            if (chain[i].previousHash != chain[i - 1].calculateHash()) return false
+        }
