@@ -66,3 +66,8 @@ class Ledger : Verifiable {
 
             if (chain[i].previousHash != chain[i - 1].calculateHash()) return false
         }
+        return true
+    }
+
+    companion object {
+        const val MINING_REWARD = 10.0
