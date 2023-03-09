@@ -71,3 +71,5 @@ class Ledger : Verifiable {
 
     companion object {
         const val MINING_REWARD = 10.0
+    }
+}
