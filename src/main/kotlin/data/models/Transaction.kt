@@ -19,3 +19,13 @@ class Transaction(
     val fromAddress: PublicKey?,
     val toAddress: PublicKey,
     val amount: Double
+) : Hashable,
+    Singable,
+Verifiable {
+
+    private var signature: ByteArray? = null
+
+    override fun calculateHash(): String =
+        "${fromAddress?.toHexString()}${toAddress.toHexString()}$amount".toHashString()
+
+    override fun sign(keyPair: KeyPair) {
