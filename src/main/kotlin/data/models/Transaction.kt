@@ -29,3 +29,9 @@ Verifiable {
         "${fromAddress?.toHexString()}${toAddress.toHexString()}$amount".toHashString()
 
     override fun sign(keyPair: KeyPair) {
+        println("|\tSigning transaction :\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t|")
+        if(
+            fromAddress == null ||
+            keyPair.public != fromAddress
+        )
+            throw UnauthorizedSignException()
