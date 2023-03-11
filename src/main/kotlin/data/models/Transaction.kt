@@ -7,3 +7,15 @@ import config.crypto.exceptions.NoSignatureException
 import config.crypto.exceptions.UnauthorizedSignException
 import config.extensions.fromHexString
 import config.extensions.toHashString
+import config.extensions.toHexString
+import data.dto.TransactionDto
+import data.types.Hashable
+import data.types.Singable
+import data.types.Verifiable
+import java.security.KeyPair
+import java.security.PublicKey
+
+class Transaction(
+    val fromAddress: PublicKey?,
+    val toAddress: PublicKey,
+    val amount: Double
