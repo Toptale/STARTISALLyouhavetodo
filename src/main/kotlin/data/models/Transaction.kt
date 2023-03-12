@@ -58,3 +58,9 @@ Verifiable {
             TransactionDto(
                 fromAddress?.toHexString() ?: "",
                 toAddress.toHexString(),
+                amount
+            )
+        )
+
+    companion object {
+        val GENESIS = Transaction(
