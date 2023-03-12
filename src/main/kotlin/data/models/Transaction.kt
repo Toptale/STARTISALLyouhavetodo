@@ -48,3 +48,13 @@ Verifiable {
 
         S.initVerify(fromAddress)
         S.update(calculateHash().fromHexString())
+        return S.verify(signature)
+    }
+
+    override fun isValid(): Boolean = verify()
+
+    override fun toString(): String =
+        Gson().toJson(
+            TransactionDto(
+                fromAddress?.toHexString() ?: "",
+                toAddress.toHexString(),
