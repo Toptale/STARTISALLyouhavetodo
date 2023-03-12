@@ -40,3 +40,11 @@ Verifiable {
         S.update(calculateHash().fromHexString())
         signature = S.sign()
     }
+
+    override fun verify(): Boolean {
+        if(fromAddress == null) return true
+
+        if(signature == null || signature?.isEmpty() == true) throw NoSignatureException()
+
+        S.initVerify(fromAddress)
+        S.update(calculateHash().fromHexString())
