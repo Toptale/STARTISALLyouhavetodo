@@ -35,3 +35,8 @@ Verifiable {
             keyPair.public != fromAddress
         )
             throw UnauthorizedSignException()
+
+        S.initSign(keyPair.private)
+        S.update(calculateHash().fromHexString())
+        signature = S.sign()
+    }
