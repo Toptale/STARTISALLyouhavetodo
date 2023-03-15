@@ -64,3 +64,11 @@ Verifiable {
 
     companion object {
         val GENESIS = Transaction(
+            Wallet.GENESIS.keyPair.public,
+            Wallet.GENESIS.keyPair.public,
+            0.0
+        ).apply {
+            sign(Wallet.GENESIS.keyPair)
+        }
+    }
+}
