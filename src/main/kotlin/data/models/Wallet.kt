@@ -8,3 +8,9 @@ import java.security.PublicKey
 import java.security.spec.ECGenParameterSpec
 
 class Wallet {
+
+    val keyPair: KeyPair = KeyPairGenerator.getInstance("EC")
+        .run {
+            initialize(ECGenParameterSpec("secp256k1"))
+            genKeyPair()
+        }
