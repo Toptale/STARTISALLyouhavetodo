@@ -25,3 +25,5 @@ class Wallet {
 
     companion object {
         val GENESIS = Wallet()
+    }
+}
