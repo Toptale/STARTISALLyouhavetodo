@@ -14,3 +14,7 @@ class Wallet {
             initialize(ECGenParameterSpec("secp256k1"))
             genKeyPair()
         }
+
+    val publicKey: PublicKey = keyPair.public
+
+    override fun toString(): String =
