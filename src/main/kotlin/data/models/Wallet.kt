@@ -18,3 +18,10 @@ class Wallet {
     val publicKey: PublicKey = keyPair.public
 
     override fun toString(): String =
+        "{\n" +
+                "\t\"private\": \"${keyPair.private.toHexString()}\",\n" +
+                "\t\"public\": \"${keyPair.public.toHexString()}\"\n" +
+                "}"
+
+    companion object {
+        val GENESIS = Wallet()
