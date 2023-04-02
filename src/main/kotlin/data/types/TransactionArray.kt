@@ -18,3 +18,10 @@ class TransactionArray : ArrayList<Transaction>() {
 
         fun getGenesis(): TransactionArray =
             if(GENESIS.isEmpty()) {
+                GENESIS.add(Transaction.GENESIS)
+                GENESIS
+            } else {
+                GENESIS
+            }
+    }
+}
